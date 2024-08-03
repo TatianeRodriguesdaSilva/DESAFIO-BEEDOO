@@ -2,25 +2,25 @@
 
 # User Stories
 
-## CRIAR CURSO
+### CRIAR CURSO
 Como administradora do sistema,
 Eu quero criar um novo curso,
 Para que eu possa disponibilizar para os usuários.
 
-## EXCLUIR CURSO
+### EXCLUIR CURSO
 Como administradora do sistema,
 Eu quero deletar cursos cadastrados,
 Para que eu remova conteúdos desnecessários.
 
-## LISTAR CURSOS
+### LISTAR CURSOS
 Como administradora do sistema,
 Eu quero visualizar os cursos em listas,
 Para que eu possa escolher qual curso ver em detalhes.
 
+```gherkin
+## CASOS DE TESTE EM GHERKIN
 
-# CASOS DE TESTE EM GHERKIN
-
-# Cenário: Criar curso Válido
+### Cenário: Criar curso Válido
 Feature: Criação de curso
 
 Scenario: criar curso válido
@@ -30,7 +30,7 @@ Scenario: criar curso válido
   Then o curso deve ser criado com sucesso
   And uma mensagem de "curso cadastrado com sucesso" deve aparecer no topo da página
 
-# Cenário: Criar curso Inválido
+### Cenário: Criar curso Inválido
 Feature: Criação de Curso
 
 Scenario: criar curso inválido
@@ -40,7 +40,7 @@ Scenario: criar curso inválido
   Then o sistema deve exibir uma mensagem de erro
   And o curso não deve ser criado
 
-# Cenário: Criar Curso Sem Preenchimento
+### Cenário: Criar Curso Sem Preenchimento
 Feature: Criação de Curso
 
 Scenario: Criar curso em sem preenchimento 
@@ -50,7 +50,7 @@ Scenario: Criar curso em sem preenchimento
   Then o sistema deve exibir uma mensagem de erro
   And o curso não deve ser criado
 
-# Cenário: Excluir Curso
+### Cenário: Excluir Curso
 Feature: Exclusão de curso
 
 Scenario: Excluir curso
@@ -59,11 +59,11 @@ Scenario: Excluir curso
   And clico no botão "excluir curso"
   Then uma mensagem de "curso excluído com sucesso" deve ser exibida na tela
   And o curso deve ser excluído da lista
+````
 
+## PASSO-A-PASSO PARA EXECUÇÃO DE CASO DE TESTE
 
-# PASSO-A-PASSO PARA EXECUÇÃO DE CASO DE TESTE
-
-# Caso de Teste TC1: Criar curso com dados válidos
+### Caso de Teste TC1: Criar curso com dados válidos
 Pré-condições:
 - O usuário deve estar logado na página de cadastro de curso.
 - A página de cadastro de curso deve estar visível.
@@ -89,7 +89,7 @@ Resutado Obtido:
   - Curso criado com sucesso
   - Mensagem exibida na tela "curso criado com sucesso"
 
-# Caso de Teste TC2: Criar curso com dados inválidos
+### Caso de Teste TC2: Criar curso com dados inválidos
 Pré-condições:
 - O usuário deve estar logado na página de cadastro de curso.
 - A página de cadastro de curso deve estar visível.
@@ -110,7 +110,7 @@ Resutado Obtido:
 Observações:
   - O curso foi criado mesmo faltando dados necessários
 
-# Caso de Teste TC3: Criar curso sem preencher dados
+### Caso de Teste TC3: Criar curso sem preencher dados
 Pré-condições:
 - O usuário deve estar logado na página de cadastro de curso.
 - A página de cadastro de curso deve estar visível.
@@ -131,7 +131,7 @@ Resutado Obtido:
 Observações:
   - O curso foi criado mesmo faltando todos dados necessários
 
-# Caso de Teste TC4: Excluir curso
+### Caso de Teste TC4: Excluir curso
 Pré-condições:
 - O usuário deve estar logado na página de listagem de cursos.
 - A página de listagem de cursos deve estar visível.
@@ -155,8 +155,8 @@ Observações:
 
 
 # LINKS 
-- Planilha de Casos de Teste: https://docs.google.com/spreadsheets/d/1EeS2nxbWJPS9Exv8EM0FWy13d6B4wvu8VJKJNcwDVOo/edit?usp=sharing
-- Evidências de Teste - Vídeos MP4: https://drive.google.com/drive/folders/1obIATClbmHI7ysP4W-LQJS-SZqdHp1Vr?usp=sharing
+- [Planilha de Casos de Teste: https](//docs.google.com/spreadsheets/d/1EeS2nxbWJPS9Exv8EM0FWy13d6B4wvu8VJKJNcwDVOo/edit?usp=sharing)
+- [Evidências de Teste - Vídeos MP4](https://drive.google.com/drive/folders/1obIATClbmHI7ysP4W-LQJS-SZqdHp1Vr?usp=sharing)
 
 
 
